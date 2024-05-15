@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eggybest - Streaming Platform</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+    <style>
+        /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color:rgb(7, 7, 7);
+}
+
+.o {
+    max-width: 1000px;
+    padding: 0 20px;
+    margin-left: 100Px;
+}
+
+nav {
+    background-color: white;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 2px 2px 15px black; 
+
+}
+
+nav h1 {
+    font-size: 32px;
+    display: flex;
+   
+}
+
+nav ul {
+    list-style: none;
+   display: flex;
+   top: 5%;
+   position: absolute;
+   left: 400px;
+}
+
+nav ul li {
+    
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+.j {
+    color: black;
+    padding: 100px 0;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #fdfafa;
+    color: #050505;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 2px 3px 10px black;
+}
+.t{
+    color: rgb(0, 0, 0);
+}
+
+button{
+    background-color: rgb(70, 65, 65);
+    border-radius:5px ;
+    font-size: 16px;
+    font-weight:600px ;
+    color: white;
+    padding: 12Px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.pontlon {
+    position: relative;
+    
+}
+.pos{
+    margin-bottom:5%;
+     margin-left: 5%;
+     margin-top: 60px;
+}
+
+.pontlons {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+.pontlonsection {
+    margin-right: 30px;
+    position: relative;
+}
+
+
+.pontlonimg {
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.pontlontitre {
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 35%;
+    left: 60px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+
+
+
+
+.pontlonsection:hover .pontlonimg {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+    object-fit: contain;
+}
+
+.pontlonsection:hover .pontlontitre{
+    opacity: 1;
+    
+}
+.popo{
+    margin-left: 40%;
+}
+.searchInput{
+   padding: 20px;
+   border-radius: 30%;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="o">
+            <h1 class="t">autakothreads </h1>
+            
+                <ul>
+                    <li><a href="./main.html">Home</a></li>
+                    <li><a href="./t-shirt.html">t-shirt</a></li>
+                    <li><a href="#po">pontalon</a></li>
+                    <li><a href="./sticker.html">sticker</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            
+        </div></nav>
+   
+
+    <section class="j">
+     
+            <h2>Welcome </h2>
+            <p>"Découvrez la collection exclusive de autakothreads sur votre destination ultime pour les pontlon.</p>
+    </section>
+</section>
+<div class="popo">
+    <input type="text" id="searchInput" class="searchInput" placeholder="Search by name">
+    <button id="searchButton">Search</button>
+</div>
+
+<div class="pos">
+<section class="pontlon">
+    <div class="o">
+        <h2 id="po">pontalon</h2>
+    
+    </div >
+</section>
+  
+        <div class="pontlon">
+            <div class="pontlons">
+                
+                <div class="pontlonsection" >
+                    <img class="pontlonimg" src="./24_54€ _QWEEK pantalones de chándal con estampado de Anime japonés para mujer, ropa de calle Vintage, pantalones de pierna ancha de gran tamaño, Jogging, pantalones casuales femeninos, centro comercial, gótico_Pant.jpg" alt="">
+                    <p class="pontlontitre">dark girl</p>
+                    
+                    
+                </div>
+                <div class="pontlonsection">
+                    <img class="pontlonimg" src="./36849991-5edc-4175-aa11-cbc0d2ddcca0.jpg" alt="">
+                    <p class="pontlontitre">jujutsu kaisen</p>
+               
+                </div>
+                <div class="pontlonsection">
+                    <img class="pontlonimg" src="./402b6c5d-a19d-440c-adbe-3ede0da1960c.jpg" alt="">
+                    <p class="pontlontitre">One piece</p>
+                    
+                    
+                </div>
+                <div class="pontlonsection">
+                    <img class="pontlonimg" src="./4254eda7-9705-412f-a6ae-5fb157e804b7.jpg" alt="">
+                    <p class="pontlontitre">jujutsu kaisen</p>
+                   
+                    
+                </div>
+               
+            </div>
+        </div>
+    <div class="pontlon">
+        <div class="pontlons">
+            
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./ASL CUSTOM PANTS.jpg" alt="">
+                <p class="pontlontitre">One piece</p>
+              
+        
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./Boys Figure & Letter Graphic Trousers.jpg" alt="">
+                <p class="pontlontitre">Bleach</p>
+               
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./Boys Reflective Cartoon Face Print Joggers.jpg" alt="">
+                <p class="pontlontitre">jujutsu kaisen</p>
+                
+                
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./c2ed1a35-4c17-4054-abf2-f12f3026008a.jpg" alt="">
+                <p class="pontlontitre">jujutsu kaisen</p>
+
+            </div>
+               
+            
+        </div>
+              
+     </div>
+     <div class="pontlon">
+        <div class="pontlons">
+            
+            <div class="pontlonsection" >
+                <img class="pontlonimg" src="./Calça Angelical Vermelha Lançamento Ff Gamer Moletom.jpg" alt="">
+                <p class="pontlontitre">Naruto</p>
+                
+                
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./Calça De Moletom Slim Akatsuki Nuvem Anime Serie Naruto Top.jpg" alt="">
+                <p class="pontlontitre">Naruto</p>
+           
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./Calça Naruto Konoha Vilas Akatsuki Renegado Anime Moleton.jpg" alt="">
+                <p class="pontlontitre">Naruto</p>
+                
+                
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./Casual Pants Cartoon Sweatpants Fashion Unisex - L thickness _ Agatsuma Zenitsu.jpg" alt="">
+                <p class="pontlontitre">Demon Slayer</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="pontlon">
+        <div class="pontlons">
+            
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./Hombre Pantalones cargo Pantalón Jogger Pantalones Ropa técnica Correa Cintura elástica Multi bolsillo Bloque de color Letra Bordado Casual Diario Algodón Ropa de calle Hip hop Negro 2023 - $19_49.jpg" alt="">
+                <p class="pontlontitre">jujutsu kaisen</p>
+                
+                
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./Urbano.jpg" alt="">
+                <p class="pontlontitre">jujutsu kaisen</p>
+           
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./One Piece Affe D_ Ruffy Jogginghosen Anime Klassisch Streetstyle Hosen Für Herren Damen Unisex Erwachsene 3D-Druck 100% Polyester.jpg" alt="">
+                <p class="pontlontitre">One piece</p>
+                
+                
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./IG_ podvalslayer.jpg" alt="">
+                <p class="pontlontitre">Naruto</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="pontlon">
+        <div class="pontlons">
+            
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./9e29dd2c-8780-4614-9a89-1daa0b50b98d.jpg" alt="">
+                <p class="pontlontitre">jujutsu kaisen</p>
+                
+                
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./Anime Pop Art Print Sweatpants _ SHEIN USA.jpg" alt="">
+                <p class="pontlontitre">Bleach</p>
+           
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./Page Not Found.jpg" alt="">
+                <p class="pontlontitre">jujutsu kaisen</p>
+                
+                
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./New Japanese Anime Demon Slayer Pants Fleece Trousers Printed Men Women Jogging Pants Streetwear Comfortable Sweatpants.jpg" alt="">
+                <p class="pontlontitre">Demon Slayer</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="pontlon">
+        <div class="pontlons">
+            
+            <div class="pontlonsection" >
+                <img class="pontlonimg" src="./0608be6a-11e0-4aa0-aca3-bcd0d5ea66ba.jpg" alt="">
+                <p class="pontlontitre">Blue stick</p>
+                
+                
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./8232ead5-8d35-48d4-bcce-4efdbc046371.jpg" alt="">
+                <p class="pontlontitre">Blue stick</p>
+           
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./Pantalones de Anime_ Kimetsu no Yaiba - 2101 Overalls _ 4XL Thick.jpg" alt="">
+                <p class="pontlontitre">Blue stick</p>
+                
+                
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./wanna get yourself some japanese streetwear_ visit the link!.jpg" alt="">
+                <p class="pontlontitre">Blue stick</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="pontlon">
+        <div class="pontlons">
+            
+            <div class="pontlonsection" >
+                <img class="pontlonimg" src="./Matching Men and Women's Shoes_ The Ultimate Style Statement.jpg" alt="">
+                <p class="pontlontitre">jujutsu kaisen</p>
+                
+                
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./Double Cep Detaylı Siyah Kargo Baggy Pantolon.jpg" alt="">
+                <p class="pontlontitre">monika</p>
+           
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./★.jpg" alt="">
+                <p class="pontlontitre">Dark girl</p>
+                
+                
+            </div>
+            <div class="pontlonsection">
+                <img class="pontlonimg" src="./Hip-hop pockets wide-leg pants - apricot _ XL.jpg" alt="">
+                <p class="pontlontitre">monika</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; autakothreads. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function searchItems() {
+            var searchTerm = document.getElementById("searchInput").value.toLowerCase();
+            var items = document.getElementsByClassName("pontlonsection");
+    
+            for (var i = 0; i < items.length; i++) {
+                var itemName = items[i].getElementsByTagName("p")[0].textContent.toLowerCase(); 
+    
+    
+                if (itemName.indexOf(searchTerm) !== -1) {
+                    items[i].style.display = "flex"; 
+                  
+                } else {
+                    items[i].style.display = "none"; 
+                }
+            }
+        }
+    
+      
+        document.getElementById("searchButton").addEventListener("click", searchItems);
+    </script>
+    
+
+
+</body>
+</html>

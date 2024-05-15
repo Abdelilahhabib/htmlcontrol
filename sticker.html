@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eggybest - Streaming Platform</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+    <style>
+        /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color:black;
+}
+
+.o {
+    max-width: 1000px;
+    padding: 0 20px;
+    margin-left: 100Px;
+}
+
+nav {
+    background-color: white;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 2px 2px 15px black; 
+
+}
+
+nav h1 {
+    font-size: 32px;
+    display: flex;
+   
+}
+
+nav ul {
+    list-style: none;
+   display: flex;
+   top: 5%;
+   position: absolute;
+   left: 400px;
+}
+
+nav ul li {
+    
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+.j {
+
+    color: black;
+    padding: 100px 0;
+    text-align: center;
+ 
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #fdfafa;
+    color: #050505;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 2px 3px 10px black;
+}
+.t{
+    color: rgb(0, 0, 0);
+}
+
+button{
+    background-color: rgb(70, 65, 65);
+    border-radius:5px ;
+    font-size: 16px;
+    font-weight:600px ;
+    color: white;
+    padding: 12Px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.sticker {
+    position: relative;
+    
+}
+.pos{
+     margin-bottom:5%;
+     margin-left: 5%;
+     margin-top: 60px;
+}
+
+.stickers {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+.stickersection {
+    margin-right: 30px;
+    position: relative;
+}
+
+
+.stickerimg {
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.stickertitre {
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 35%;
+    left: 60px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.stickersection:hover .stickerimg {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+.stickersection:hover .stickertitre{
+    opacity: 1;
+    
+}
+.popo{
+    margin-left: 40%;
+}
+#searchInput{
+   padding: 20px;
+   border-radius: 30%;
+}
+ 
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="o">
+            <h1 class="t">autakothreads </h1>
+            
+                <ul>
+                    <li><a href="./main.html">Home</a></li>
+                    <li><a href="./t-shirt.html">t-shirt</a></li>
+                    <li><a href="./pontalon.html">pontalon</a></li>
+                    <li><a href="#po">sticker</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            
+        </div>
+    </nav>
+        
+    <section class="j">
+        
+            <h2>Welcome </h2>
+            <p>"Découvrez la collection exclusive de autakothreads sur votre destination ultime pour les sticker.</p>
+        
+    </section>
+     
+     <div class="popo">
+        <input type="text" id="searchInput" placeholder="Search by name">
+        <button id="searchButton">Search</button>
+    </div>
+    
+
+<div class="pos">
+<section class="sticker">
+    <div class="o">
+        <h2 id="po">sticker:</h2>
+    
+    </div >
+</section>
+  
+        <div class="sticker">
+            <div class="stickers">
+                
+                <div class="stickersection" >
+                    <img class="stickerimg" src="./396fc8af-63c6-4be5-b5cc-49d1b671cb88.jpg" alt="">
+                    <p class="stickertitre">anime</p>
+                    
+                    
+                </div>
+                <div class="stickersection">
+                    <img class="stickerimg" src="./Anime Stickers for Sale (1).jpg" alt="">
+                    <p class="stickertitre">chainsaw man</p>
+               
+                </div>
+                <div class="stickersection">
+                    <img class="stickerimg" src="./Stickers sur le thème Anime (1).jpg" alt="">
+                    <p class="stickertitre">Naruto</p>
+                    
+                    
+                </div>
+                <div class="stickersection">
+                    <img class="stickerimg" src="./Stickers sur le thème Anime.jpg" alt="">
+                    <p class="stickertitre">Naruto</p>
+                   
+                    
+                </div>
+               
+            </div>
+        </div>
+    <div class="sticker">
+        <div class="stickers">
+            
+            <div class="stickersection">
+                <img class="stickerimg" src="./Anime Stickers for Sale.jpg" alt="">
+                <p class="stickertitre">one piece</p>
+              
+        
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Attack On Titan - Eren Jaeger Sticker _ Attack On Titan Anime.jpg" alt="">
+                <p class="stickertitre">atack on titan</p>
+               
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Attack On Titan Stickers for Sale.jpg" alt="">
+                <p class="stickertitre">atack on titan</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Death Flying Ryuki Sticker _ Death-note.jpg" alt="">
+                <p class="stickertitre">death note</p>
+
+            </div>
+               
+            
+        </div>
+              
+     </div>
+     <div class="sticker">
+        <div class="stickers">
+            
+            <div class="stickersection" >
+                <img class="stickerimg" src="./Fotos De Anita En Sticker En 2020  A35.jpg" alt="">
+                <p class="stickertitre">jujutsu kaisen</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Hunter X Hunter Stickers for Sale (1).jpg" alt="">
+                <p class="stickertitre">Hunter x Hunter</p>
+           
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Hunter X Hunter Stickers for Sale (2).jpg" alt="">
+                <p class="stickertitre">Hunter x Hunter</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Kimetsu No Yaiba Stickers for Sale.jpg" alt="">
+                <p class="stickertitre">Demonslayer</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="sticker">
+        <div class="stickers">
+            
+            <div class="stickersection" >
+                <img class="stickerimg" src="./Satoru Gojo Stickers for Sale.jpg" alt="">
+                <p class="stickertitre">jujutsu kaisen</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Daaamn Sticker.jpg" alt="">
+                <p class="stickertitre">one piece</p>
+           
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./_Gojou and Geto Chibi_ Sticker for Sale by Kagurachi.jpg" alt="">
+                <p class="stickertitre">jujutsu kaisen</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Naruto - sticker by blazingturtle.jpg" alt="">
+                <p class="stickertitre">Naruto</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="sticker">
+        <div class="stickers">
+            
+            <div class="stickersection" >
+                <img class="stickerimg" src="./One Piece - Zoro Roronoa Sticker _ One-piece.jpg" alt="">
+                <p class="stickertitre">One Piece </p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Sukuna Stickers for Sale (1).jpg" alt="">
+                <p class="stickertitre">jujutsu kaisen</p>
+           
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Naruto Stickers for Sale.jpg" alt="">
+                <p class="stickertitre">Naruto</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Itachi Uchiha Sticker _ Itachi.jpg" alt="">
+                <p class="stickertitre">Naruto</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="sticker">
+        <div class="stickers">
+            
+            <div class="stickersection" >
+                <img class="stickerimg" src="./Luffy Sticker.jpg" alt="">
+                <p class="stickertitre">One Piece</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./bd574cf2-3de4-4369-a471-7d941fd6e9bd.jpg" alt="">
+                <p class="stickertitre">One Piece</p>
+           
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Berserk Guts Black Metal Design Sticker _ Berserk (1).jpg" alt="">
+                <p class="stickertitre">Black Metal</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Black Clover Stickers for Sale.jpg" alt="">
+                <p class="stickertitre">Black Clover</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="sticker">
+        <div class="stickers">
+            
+            <div class="stickersection" >
+                <img class="stickerimg" src="./Blue Lock - Meguru Bachira Sticker.jpg" alt="">
+                <p class="stickertitre">Blue Lock</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./_Mashle_ Sticker for Sale by Khadeejah-m.jpg" alt="">
+                <p class="stickertitre">Mashle</p>
+           
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./_Monika Cute Kawaii Anime Girl Pouting_ Sticker for Sale by Kawaiifu69.jpg" alt="">
+                <p class="stickertitre">Monika</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./3D Luffy machine gun punches by tenkaichi_art.jpg" alt="">
+                <p class="stickertitre">One piece</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="sticker">
+        <div class="stickers">
+            
+            <div class="stickersection" >
+                <img class="stickerimg" src="./Killua Zoldyck Baaka Sticker _ Killua Zoldyck.jpg" alt="">
+                <p class="stickertitre">Hunter X Hunter</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Kimetsu No Yaiba Stickers for Sale (1).jpg" alt="">
+                <p class="stickertitre">Demon Slayer</p>
+           
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Kimetsu No Yaiba Stickers for Sale (2).jpg" alt="">
+                <p class="stickertitre">Demon Slayer</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Log In (1).jpg" alt="">
+                <p class="stickertitre">jujutsu kaisen</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="sticker">
+        <div class="stickers">
+            
+            <div class="stickersection" >
+                <img class="stickerimg" src="./Mugiwara Flag Sticker _ One-piece.jpg" alt="">
+                <p class="stickertitre">One-piece</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Pegatinas_ Bungou Stray Dogs.jpg" alt="">
+                <p class="stickertitre">Bungou Stray Dogs</p>
+           
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Pegatinas_ Satoru Gojo.jpg" alt="">
+                <p class="stickertitre">jujutsu kaisen</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./One Piece Stickers for Sale.jpg" alt="">
+                <p class="stickertitre">One Piece</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="sticker">
+        <div class="stickers">
+            
+            <div class="stickersection" onclick="redirection()">
+                <img class="stickerimg" src="./Pegatinas_ Anime.jpg" alt="">
+                <p class="stickertitre">Naruto</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Stickers sur le thème Attack On Titan (1).jpg" alt="">
+                <p class="stickertitre">Attack on Titan</p>
+           
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Stickers sur le thème Tokyo Ghoul.jpg" alt="">
+                <p class="stickertitre">tokyo ghoul</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Stickers sur le thème Attack On Titan.jpg" alt="">
+                <p class="stickertitre">Attack on Titan</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="sticker">
+        <div class="stickers">
+            
+            <div class="stickersection" >
+                <img class="stickerimg" src="./Pegatinas_ Anime.jpg" alt="">
+                <p class="stickertitre">Naruto</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Stickers sur le thème Anime (2).jpg" alt="">
+                <p class="stickertitre">jujutsu kaisen</p>
+           
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Spirited Away Susuwatari Sticker - Sticker Mania.jpg" alt="">
+                <p class="stickertitre">spy x family</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Unisex Nezuko Graphic Print Hoodie  Demon Slayer Anime Sweatshirt.jpg" alt="">
+                <p class="stickertitre">Demon Slayer</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="sticker">
+        <div class="stickers">
+            
+            <div class="stickersection" >
+                <img class="stickerimg" src="./Umaru Coke Sticker.jpg" alt="">
+                <p class="stickertitre">annia</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Izuku Midoriya Stickers for Sale.jpg" alt="">
+                <p class="stickertitre">My Hero Academia</p>
+           
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Makima Sticker (1).jpg" alt="">
+                <p class="stickertitre">chainsaw man</p>
+                
+                
+            </div>
+            <div class="stickersection">
+                <img class="stickerimg" src="./Nosferatu Sticker _ Hellsing.jpg" alt="">
+                <p class="stickertitre">Nosferatu</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="container">
+            <p>&copy; autakothreads. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        function searchItems() {
+            var searchTerm = document.getElementById("searchInput").value.toLowerCase();
+            var items = document.getElementsByClassName("stickersection");
+    
+            for (var i = 0; i < items.length; i++) {
+                var itemName = items[i].getElementsByTagName("p")[0].textContent.toLowerCase(); 
+    
+    
+                if (itemName.indexOf(searchTerm) !== -1) {
+                    items[i].style.display = "flex"; 
+                  
+                } else {
+                    items[i].style.display = "none"; 
+                }
+            }
+        }
+    
+      
+        document.getElementById("searchButton").addEventListener("click", searchItems);
+    </script>
+    
+
+
+    
+    
+</body>
+</html>

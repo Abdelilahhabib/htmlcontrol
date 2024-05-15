@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login & Registration Form HTML CSS | Codehal</title>
+    
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f9f9f9;
+    background-image: url("./wallpaperflare.com_wallpaper\ \(2\).jpg");
+    background-size: cover;
+
+}
+.wrapper {
+    position: relative;
+    width: 440px;
+    height: 555px;
+    background-image: url("./wallpaperflare.com_wallpaper\ \(4\).jpg");
+    background-size: cover;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-wrapper {
+    z-index: 2;
+}
+.wrapper .form-wrapper.login {
+    transition: .7s ease-in-out;
+    transition-delay: .7s;
+}
+.wrapper.active .form-wrapper.login {
+    transition-delay: 0s;
+    transform: translateX(-400px);
+}
+.wrapper .form-wrapper.register {
+    position: absolute;
+    margin-top: 15px;
+    transform: translateX(-400px);
+    transition: .7s ease-in-out;
+    
+}
+.wrapper.active .form-wrapper.register {
+    transition-delay: .7s;
+    transform: translateX(0);
+}
+
+.input-box {
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+}
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #f2f2f2;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #f2f2f2;
+    padding: 0 20px 0 40px;
+}
+
+.input-box .icon {
+    position: absolute;
+    left: 15px;
+    color: #f2f2f2;
+    font-size: 1.2em;
+    line-height: 55px;
+}
+.forgot-pass {
+    margin: -15px 0 15px 15px;
+}
+.forgot-pass a {
+    color: #f2f2f2;
+    font-size: .9em;
+    text-decoration: none;
+}
+.forgot-pass a:hover {
+    text-decoration: underline;
+}
+button {
+    width: 100%;
+    height: 45px;
+    background: #f2f2f2;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #54880e;
+    font-weight: 500;
+}
+.sign-link {
+    font-size: .9em;
+    text-align: center;
+    margin: 25px ;
+    font-weight: 600;
+}
+
+.sign-link p a{
+    color: white;
+}
+.sign-link p a:hover {
+    text-decoration: none;
+}
+ input:hover::placeholder{
+    color: white;
+}
+h2{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="form-wrapper login">
+            <form action="">
+                <h2>Login</h2>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email"  placeholder="Email"  id="mail" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" id="pass" placeholder="Password" required>
+                     <p id="message"></p>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">Forgot Password?</a>
+                   
+                </div>
+                <button onclick="signIn()" >Login</button>
+                <div class="sign-link">
+                    <p>Don't have an account? <a href="#" onclick="registerActive()">Register</a></p>
+                </div>
+            </form>
+        </div>
+        
+        <div class="form-wrapper register">
+            <form action="">
+                <h2>Registration</h2>
+                
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" placeholder="Full Name" id="name" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" placeholder="date sous forme jour/mmois/année" id="date" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" placeholder="Email" id="email" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" placeholder="Password" id="password" required>
+                    <p id="s1"></p>
+                </div>
+                <button onclick="add()">Register</button>
+                <div class="sign-link">
+                    <p>Already have an account? <a href="#" onclick="loginActive()">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script >
+        const wrapper = document.querySelector('.wrapper');
+function registerActive() {
+    wrapper.classList.toggle('active');
+}
+function loginActive() {
+    wrapper.classList.toggle('active');
+}
+var users = [{ email: 'ali el', password: 'ali123456',Date:'12/4/2002',name:'abdo' }];
+
+
+function add() {
+        var nomvaleur = document.getElementById('name').value;
+        var datevaleur = document.getElementById('date').value;
+        var codevaleur = document.getElementById('password').value;
+        var uservaleur = document.getElementById('email').value;
+        
+        if (codevaleur.length < 8) {
+            document.getElementById('s1').innerText = 'Password must contain 8 characters';
+        }
+        var user = { email: uservaleur, password: codevaleur ,Date: datevaleur ,name: nomvaleur };
+        users.push(user);
+        console.log(users);
+    }
+    function signIn() {
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+    
+    for (var i = 0; i < users.length; i++) {
+        var user = users[i];
+        if (user.username === email && user.password === password) {
+            alert('Connexion réussie !');
+            window.location.href = 'menu.html';
+            return; 
+        }
+    }
+    
+    alert('Identifiants incorrects. Veuillez réessayer.');
+}
+    </script>
+</body>
+</html>

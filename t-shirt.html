@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eggybest - Streaming Platform</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+    <style>
+        /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    color:black;
+}
+
+.o {
+    max-width: 1000px;
+    padding: 0 20px;
+    margin-left: 100Px;
+    
+}
+
+nav {
+    background-color: white;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 2px 2px 15px black; 
+
+
+}
+
+nav h1 {
+    font-size: 32px;
+    display: flex;
+   
+}
+
+nav ul {
+    list-style: none;
+   display: flex;
+   top: 5%;
+   position: absolute;
+   left: 400px;
+}
+
+nav ul li {
+    
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+.j {
+    color: black;
+    padding: 100px 0;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #fdfafa;
+    color: #050505;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 2px 3px 10px black;
+}
+.t{
+    color: rgb(0, 0, 0);
+}
+
+button{
+    background-color: rgb(67, 65, 70);
+    border-radius:5px ;
+    font-size: 16px;
+    font-weight:600px ;
+    color: white;
+    padding: 12Px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.movie-list-container {
+    padding: 0 20px;
+}
+
+.t-shirt {
+    position: relative;
+    
+}
+.pos{
+    margin-bottom:5%;
+     margin-left: 5%;
+     margin-top: 60px;
+}
+
+.t-shirts {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+.t-shirtsection {
+    margin-right: 30px;
+    position: relative;
+}
+
+
+.t-shirtimg {
+    width: 280px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.t-shirttitre {
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 35%;
+    left: 60px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+
+
+
+
+.t-shirtsection:hover .t-shirtimg {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+.t-shirtsection:hover .t-shirttitre{
+    opacity: 1;
+    
+}
+.popo{
+    margin-left: 40%;
+}
+#searchInput{
+   padding: 20px;
+   border-radius: 30%;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="o">
+            <h1 class="t">autakothreads </h1>
+            
+                <ul>
+                    <li><a href="./main.html">Home</a></li>
+                    <li><a href="#po">t-shirt</a></li>
+                    <li><a href="./pontalon.html">pontalon</a></li>
+                    <li><a href="./sticker.html">sticker</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            
+        </div></nav>
+  
+
+    <section class="j">
+            <h2>Welcome </h2>
+            <p>"Découvrez la collection exclusive de autakothreads sur votre destination ultime pour les t-shirt.</p>
+</section>
+<div class="popo">
+    <input type="text" id="searchInput" placeholder="Search by name">
+    <button id="searchButton">Search</button>
+</div>
+<div class="pos">
+<section class="t-shirt">
+    <div class="o">
+        <h2 id="po">t-shirt</h2>
+    
+    </div >
+</section>
+  
+        <div class="t-shirt">
+            <div class="t-shirts">
+                
+                <div class="t-shirtsection" >
+                    <img class="t-shirtimg" src="./6_27€ _Camiseta de Anime japonés de ataque a los gigantes para hombre y mujer, ropa de calle informal, de dibujos animados, para parejas_Camisetas_   - AliExpress.jpg" alt="">
+                    <p class="t-shirttitre">Attack on titan</p>
+                    
+                    
+                </div>
+                <div class="t-shirtsection">
+                    <img class="t-shirtimg" src="./Bakugou Anime T Shirt.jpg" alt="">
+                    <p class="t-shirttitre">My Hero Academia</p>
+               
+                </div>
+                <div class="t-shirtsection">
+                    <img class="t-shirtimg" src="./Camisa manga curta feminina - L (60-70 kg) _ white.jpg" alt="">
+                    <p class="t-shirttitre">One piece</p>
+                    
+                    
+                </div>
+                <div class="t-shirtsection">
+                    <img class="t-shirtimg" src="./Camiseta One Piece Anime Luffy Chapéu De Palha Camisa Anime.jpg" alt="">
+                    <p class="t-shirttitre">One piece</p>
+                   
+                    
+                </div>
+               
+            </div>
+        </div>
+    <div class="t-shirt">
+        <div class="t-shirts">
+            
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Dabi Unisex T-Shirt My Hero Academia Anime Tee Boku No Hero Academia Shirt Anime.jpg" alt="">
+                <p class="t-shirttitre">My Hero Academia </p>
+              
+        
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Gildan Shirts _ Dragon Ball Z Son Goku T-Shirt Anime Manga Gohan, Goten, Vegeta,Trunks Shirt _ Color_ Black_White _ Size_ Various.jpg" alt="">
+                <p class="t-shirttitre">Dragon Ball Z</p>
+               
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Inspired by Demon Slayer Cosplay Anime Cartoon Polyester _ Cotton Blend Print Harajuku Graphic Kawaii T-shirt For Women's _ Men's.jpg" alt="">
+                <p class="t-shirttitre">Demon Slayer</p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Inspired by Jujutsu Kaisen Itadori Yuji T-shirt Cartoon 100% Polyester Anime Harajuku Graphic Kawaii T-shirt For Men's _ Women's _ Couple's.jpg" alt="">
+                <p class="t-shirttitre">Jujutsu Kaisen</p>
+
+            </div>
+               
+            
+        </div>
+              
+     </div>
+     <div class="t-shirt">
+        <div class="t-shirts">
+            
+            <div class="t-shirtsection" >
+                <img class="t-shirtimg" src="./Inspired by One Piece Monkey D_ Luffy T-shirt Cartoon 100% Polyester Anime Harajuku Graphic Kawaii T-shirt For Men's _ Women's _ Unisex _ Couple's _ Manga _ Cosplay.jpg" alt="">
+                <p class="t-shirttitre">One piece</p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Jujutsu Kaisen Gojo Satoru Ryomen Sukuna T-Shirt-Ärmel Anime Zeichentrick Anime Harajuku Grafik Streetstyle T-shirt Für Herren Damen Unisex Erwachsene Heißprägen 100% Polyester Casual.jpg" alt="">
+                <p class="t-shirttitre">Jujutsu Kaisen</p>
+           
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Dark Girl Printed Oversize T-shirt white 2-S.jpg" alt="">
+                <p class="t-shirttitre">Dark Girl1917</p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./_Drama Queen_ Unisex Men Women Streetwear Graphic T-Shirt - White.jpg" alt="">
+                <p class="t-shirttitre">Drama Queen</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="t-shirt">
+        <div class="t-shirts">
+            
+            <div class="t-shirtsection" >
+                <img class="t-shirtimg" src="./Anime Manga Otaku Kawaii Fan Art Drawing Best Seller Top Trending t shirt vector.jpg" alt="">
+                <p class="t-shirttitre">Naruto</p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Top On Sale Product Recommendations! Harajuku Anime Women T Shirt Loose Oversized T Shirt Female.jpg" alt="">
+                <p class="t-shirttitre">Storm</p>
+           
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Unisex Nezuko Graphic Print Hoodie  Demon Slayer Anime Sweatshirt.jpg" alt="">
+                <p class="t-shirttitre">Demon Slayer</p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Inspired by Demon Slayer Cosplay Anime Cartoon Polyester _ Cotton Blend Print Harajuku Graphic Kawaii T-shirt For Women's _ Men's (1).jpg" alt="">
+                <p class="t-shirttitre">Demon Slayer</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="t-shirt">
+        <div class="t-shirts">
+            
+            <div class="t-shirtsection" >
+                <img class="t-shirtimg" src="./One Piece Nami Roronoa Zoro Tony Tony Chopper T-shirt Cartoon Manga Anime 3D Harajuku Graphic Kawaii T-shirt For Couple's Men's Women's Adults' 3D Print.jpg" alt="">
+                <p class="t-shirttitre">One piece</p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Hombres Camiseta cómics con con estampado de letra.jpg" alt="">
+                <p class="t-shirttitre">Jujutsu Kaisen</p>
+           
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Men Japanese Letter And Figure Graphic Tee.jpg" alt="">
+                <p class="t-shirttitre">Monika</p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Men's Demon Slayer Short Sleeve Graphic T-Shirt - Black S.jpg" alt="">
+                <p class="t-shirttitre">Demon Slayer</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="t-shirt">
+        <div class="t-shirts">
+            
+            <div class="t-shirtsection" >
+                <img class="t-shirtimg" src="./One piece Graphic tee Streetwear Anime T-shirts.jpg" alt="">
+                <p class="t-shirttitre">One piece</p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./One Piece Monkey D_Luffy Manches Ajustées Anime Dessin Animé Animé Harajuku Art graphique Kawaii Tee-shirt Pour Couple Homme Femme Adulte Estampage à chaud.jpg" alt="">
+                <p class="t-shirttitre">One piece</p>
+           
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./T-shirt Totoro Pātī.jpg" alt="">
+                <p class="t-shirttitre">Totoro </p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Pull Berserk Guts - Blanc _ L.jpg" alt="">
+                <p class="t-shirttitre">Berserk Guts</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="t-shirt">
+        <div class="t-shirts">
+            
+            <div class="t-shirtsection" >
+                <img class="t-shirtimg" src="./T-Shirt Inspiration Japonaise 'The Ocean' - Noir _ L.jpg" alt="">
+                <p class="t-shirttitre">The Ocean</p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Horror Graphic T-Shirt - 2 _ 3XL.jpg" alt="">
+                <p class="t-shirttitre">Dark Girl</p>
+           
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Homme Chemise à imprimé floral (sans t-shirt).jpg" alt="">
+                <p class="t-shirttitre">Dark Girl</p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Homme T-shirt 2 en 1 figure et lettre.jpg" alt="">
+                <p class="t-shirttitre">Jujutsu Kaisen</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    
+    <div class="t-shirt">
+        <div class="t-shirts">
+            
+            <div class="t-shirtsection" >
+                <img class="t-shirtimg" src="./Legendary Ryujin Dragon Shirt Pants Set (30% OFF) - 30% OFF! _ M.jpg" alt="">
+                <p class="t-shirttitre">One piece</p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Heroes Super Vegeta Monkey D Luffy Naruto Kamado Tanjiro T Shirt Hoodie Sweater.jpg" alt="">
+                <p class="t-shirttitre">One piece</p>
+           
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src=".//Japanese Anime Bleach T-Shirt Men's Kawaii Kurosaki Ichigo Tees - 85661 _ S.jpg" alt="">
+                <p class="t-shirttitre">Bleach</p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Hombres Camiseta dragón & con estampado de onda.jpg" alt="">
+                <p class="t-shirttitre">One piece</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="t-shirt">
+        <div class="t-shirts">
+            
+            <div class="t-shirtsection" >
+                <img class="t-shirtimg" src="./One piece Graphic tee Streetwear Anime T-shirts.jpg" alt="">
+                <p class="t-shirttitre">One piece</p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./Bioworld My Hero Academia Katsuki Bakugo Explosion Men’s Black T-Shirt.jpg" alt="">
+                <p class="t-shirttitre">My Hero AcademiaMy Hero Academia</p>
+           
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./t shirt one piece monkey d - Rose _ XS.jpg" alt="">
+                <p class="t-shirttitre">One piece</p>
+                
+                
+            </div>
+            <div class="t-shirtsection">
+                <img class="t-shirtimg" src="./ca6245c0-ff5a-411d-aa6d-a8377d37cfde.jpg" alt="">
+                <p class="t-shirttitre">One piece</p>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+    
+</div>
+    <footer>
+        <div class="container">
+            <p>&copy; autakothreads. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function searchItems() {
+            var searchTerm = document.getElementById("searchInput").value.toLowerCase();
+            var items = document.getElementsByClassName("t-shirtsection");
+    
+            for (var i = 0; i < items.length; i++) {
+                var itemName = items[i].getElementsByTagName("p")[0].textContent.toLowerCase(); 
+    
+    
+                if (itemName.indexOf(searchTerm) !== -1) {
+                    items[i].style.display = "flex"; 
+                  
+                } else {
+                    items[i].style.display = "none"; 
+                }
+            }
+        }
+    
+      
+        document.getElementById("searchButton").addEventListener("click", searchItems);
+    </script>
+    
+
+
+</body>
+</html>
